@@ -2,7 +2,7 @@
 
 This is a web application for managing academic resources, faculty schedules, curriculum, and room reservations.
 
-**Live Website:** [https://arm-web-app.vercel.app/](https://arm-web-app.vercel.app/)
+**Live Website:** [https://arm-web-app.vercel.app/](https://arm-web-sti.vercel.app)
 
 ## Getting Started
 
