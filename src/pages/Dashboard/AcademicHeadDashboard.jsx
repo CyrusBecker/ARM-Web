@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/AcademicHeadDashboard.css";
-import stiLogo from "../../assets/logo.png";
+import stiLogo from "../../assets/stilogo.png";
 import { HiBell, HiUserCircle } from "react-icons/hi";
 import {
   HiHome,
@@ -20,9 +20,9 @@ const AcademicHeadDashboard = () => {
   const [sidebarOpen, setSidebarOpen] = React.useState(window.innerWidth > 768);
 
   const handleSignOut = () => {
-    const confirmed = window.confirm('Are you sure you want to sign out?');
+    const confirmed = window.confirm("Are you sure you want to sign out?");
     if (confirmed) {
-      navigate('/');
+      navigate("/");
     }
   };
 
@@ -33,7 +33,16 @@ const AcademicHeadDashboard = () => {
           <button
             className="sidebar-toggle-btn"
             onClick={() => setSidebarOpen((v) => !v)}
-            style={{ marginRight: 16, background: 'none', border: 'none', cursor: 'pointer', fontSize: 28, color: '#0a2f5c', display: 'flex', alignItems: 'center' }}
+            style={{
+              marginRight: 16,
+              background: "none",
+              border: "none",
+              cursor: "pointer",
+              fontSize: 28,
+              color: "#0a2f5c",
+              display: "flex",
+              alignItems: "center",
+            }}
             aria-label="Toggle sidebar"
           >
             <HiMenu />
@@ -47,7 +56,12 @@ const AcademicHeadDashboard = () => {
       <div className="dashboard-main">
         {sidebarOpen && (
           <aside className="dashboard-sidebar">
-            <img src={stiLogo} alt="ARM Logo" className="dashboard-logo" style={{ marginBottom: 24 }} />
+            <img
+              src={stiLogo}
+              alt="ARM Logo"
+              className="dashboard-logo"
+              style={{ marginBottom: 24 }}
+            />
             <ul className="sidebar-list">
               <li>
                 <NavLink
@@ -138,7 +152,7 @@ const AcademicHeadDashboard = () => {
                 <div
                   className="side-link"
                   onClick={handleSignOut}
-                  style={{ cursor: 'pointer' }}
+                  style={{ cursor: "pointer" }}
                 >
                   <HiArrowRightOnRectangle className="side-icon" /> Sign Out
                 </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/AcademicHeadDashboard.css";
-import stiLogo from "../../assets/logo.png";
+import stiLogo from "../../assets/stilogo.png";
 import { HiBell, HiUserCircle } from "react-icons/hi";
 import {
   HiHome,

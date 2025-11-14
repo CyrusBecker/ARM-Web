@@ -46,11 +46,13 @@ function LoginPage() {
     <div className="login-container">
       <div className="login-overlay">
         <div className="login-card">
-          <img
-            src={stiLogo}
-            alt="ARM Logo"
-            className="login-logo"
-          />
+          <div className="login-header">
+            <div className="tags">
+              <span className="tag tag-academic">Academic</span>
+              <span className="tag tag-resource">Resource</span>
+              <span className="tag tag-management">Management</span>
+            </div>
+          </div>
 
           <form className="login-form" onSubmit={handleSubmit}>
             {error && <div className="login-error">{error}</div>}
