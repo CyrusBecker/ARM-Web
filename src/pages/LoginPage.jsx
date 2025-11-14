@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { db } from "../firebase";
 import { collection, query, where, getDocs } from "firebase/firestore";
 import "../styles/LoginPage.css";
-import stiLogo from "../assets/logo.png";
+import stiLogo from "../assets/stilogo.png";
 
 function LoginPage() {
   const navigate = useNavigate();
@@ -46,13 +46,7 @@ function LoginPage() {
     <div className="login-container">
       <div className="login-overlay">
         <div className="login-card">
-          <div className="login-header">
-            <div className="tags">
-              <span className="tag tag-academic">Academic</span>
-              <span className="tag tag-resource">Resource</span>
-              <span className="tag tag-management">Management</span>
-            </div>
-          </div>
+          <img src={stiLogo} alt="ARM Logo" className="login-logo" />
 
           <form className="login-form" onSubmit={handleSubmit}>
             {error && <div className="login-error">{error}</div>}
